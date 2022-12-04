@@ -1,0 +1,16 @@
+[package]
+name = "chip8"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+glow = "0.11.2"
+imgui  = { git = "https://github.com/imgui-rs/imgui-rs.git", rev = "92f94510c6092d242c722f697469d098222c42e5" }
+imgui_sdl2_support = { git = "https://github.com/imgui-rs/imgui-rs.git", package="imgui-sdl2-support", rev = "92f94510c6092d242c722f697469d098222c42e5" }
+imgui-glow-renderer = { git = "https://github.com/imgui-rs/imgui-rs.git", package="imgui-glow-renderer", rev = "92f94510c6092d242c722f697469d098222c42e5" }
+[dependencies.sdl2]
+version = "0.35.2"
+default-features = false
+features = ["image"]
